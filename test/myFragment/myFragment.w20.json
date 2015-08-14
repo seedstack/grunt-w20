@@ -1,0 +1,16 @@
+{
+  "id": "myFragment",
+  "name": "W20 myFragment fragment",
+
+  "modules": {
+    "autoload": {
+      "path": "{myFragment}/modules/autoload",
+      "autoload": true
+    },
+    "noautoload": {
+      "path": "{myFragment}/modules/noautoload",
+      "autoload": false
+    }
+  }
+
+}

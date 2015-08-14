@@ -1,3 +1,13 @@
+# IDE (IntelliJ)
+.idea
+
+# Dev dependencies
+node_modules
+
+# Temporary output
+test/tmp
+test/bower_components
+
 # Logs
 logs
 *.log
