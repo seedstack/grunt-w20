@@ -1,7 +1,7 @@
 # grunt-w20
 Grunt plugin providing tasks for W20-based applications.
 
-# Optimization
+## Optimization
 
 Optimization (concatenation and minification of js/css files) is done with r.js.
 
@@ -29,7 +29,7 @@ grunt.initConfig({
 
 The above should be sufficient for a default app structure.
 
-## Options
+### Options
 
 ```
 w20: {
