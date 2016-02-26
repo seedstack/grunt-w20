@@ -40,7 +40,7 @@ function getResolvedRequireConfig (fragmentManifestPath, fragmentDefinition, com
 
             // handle the special case of the w20 loader whose path is not defined
             if (key === 'w20') {
-                value = componentsPath + '/w20/core/modules/w20';
+                value = componentsPath + '/w20/modules/w20';
             }
 
             fragmentDefinition.requireConfig.paths[key] = resolveComponentsPath(value, componentsPath);
