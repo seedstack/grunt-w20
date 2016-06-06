@@ -1,7 +1,7 @@
 {
   "name": "grunt-w20",
   "description": "Produce an optimized build of a w20 application",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/seedstack/grunt-w20",
   "author": {
     "name": "kavi87"
@@ -38,7 +38,6 @@
     "gruntplugin",
     "w20",
     "optimization",
-    "optimize",
     "optimizer",
     "compression",
     "compress",
