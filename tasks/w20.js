@@ -101,7 +101,7 @@ module.exports = function (grunt) {
 
             fragmentDefinition = readJSON(fragmentManifestPath);
 
-            componentsPath = util.getComponentsPath(addBasePath, fragmentConfiguration, options.componentsPath);
+            componentsPath = util.getComponentsPath(fragmentConfiguration) || options.componentsPath;
 
             _.merge(options.buildConfig, util.getResolvedRequireConfig(fragmentManifestPath, fragmentDefinition, componentsPath));
 
