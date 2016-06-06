@@ -67,9 +67,9 @@ exports.w20 = {
             }
         };
         var defaultComponentsPath = 'default/path';
-        var componentsPath = w20TaskUtil.getComponentsPath(prefixWithBasePath, fragmentConfiguration, defaultComponentsPath);
+        var componentsPath = w20TaskUtil.getComponentsPath(fragmentConfiguration);
 
-        test.equal(componentsPath, 'base/path/custom/components/path');
+        test.equal(componentsPath, 'custom/components/path');
 
         test.done();
     },

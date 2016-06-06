@@ -7,11 +7,16 @@
  */
 var _ = require('lodash');
 
-function getComponentsPath (prefixWithBasePath, fragmentConfiguration, defaultComponentsPath) {
-    var componentsPath = (fragmentConfiguration.vars || {})['components-path'];
-    return prefixWithBasePath(componentsPath === undefined ? defaultComponentsPath : fragmentConfiguration.vars['components-path']);
-}
+function getComponentsPath(fragmentConfiguration) {
+    var componentsPathVarIsConfigured = fragmentConfiguration &&
+        typeof fragmentConfiguration.vars === 'object' &&
+        typeof fragmentConfiguration.vars['components-path'] === 'string';
 
+    if (componentsPathVarIsConfigured) {
+        return fragmentConfiguration.vars['components-path']
+    }
+
+}
 function resolveComponentsPath (path, componentsPath) {
     return path.replace(new RegExp('\\${([\\w-]+)(:([^:}]*))?}', 'g'), componentsPath);
 }
